@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="theme-color" content="#080912"><title>kinoxlient</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="space"></canvas>
+<div class="app-shell">
+  <header class="topbar">
+    <div class="brand"><span class="brand-mark">K</span><div><b>kinoxlient</b><small>GAME HUB · v1.0</small></div></div>
+    <button class="icon-btn" id="settingsBtn" aria-label="Настройки">⚙</button>
+  </header>
+  <main id="home">
+    <section class="balance glass">
+      <div><span class="eyebrow">ОБЩИЙ БАЛАНС</span><div class="money"><span id="balance">10.00</span><small>₽</small></div><p>Единый игровой кошелёк</p></div>
+      <div class="coin-orb">₽</div>
+    </section>
+    <div class="section-heading"><div><span class="eyebrow">ТВОЯ КОЛЛЕКЦИЯ</span><h1>Игры</h1></div><span class="count">07 МОДУЛЕЙ</span></div>
+    <section class="games-grid">
+      <button class="game-card wide" data-game="minegoing"><span class="game-art mine-art"><img src="/icons/minegoing.svg" alt="" /></span><span class="game-info"><b>Minegoing</b><small>3D runner · 3 мира</small></span><span class="arrow">↗</span></button>
+      <button class="game-card" data-game="zombie"><span class="game-art zombie-art"><img src="/icons/zombie.svg" alt="" /></span><span class="game-info"><b>Zombie Gate</b><small>Defense shooter</small></span><span class="arrow">↗</span></button>
+      <button class="game-card" data-game="clickingW"><span class="game-art tap-art"><img src="/icons/clickingW.svg" alt="" /></span><span class="game-info"><b>clickingW</b><small>Tap & upgrade</small></span><span class="arrow">↗</span></button>
+      <button class="game-card" data-game="crypto"><span class="game-art crypto-art"><img src="/icons/crypto.svg" alt="" /></span><span class="game-info"><b>CryptoMine</b><small>Idle mining</small></span><span class="arrow">↗</span></button>
+      <button class="game-card" data-game="turbo"><span class="game-art turbo-art"><img src="/icons/turbo.svg" alt="" /></span><span class="game-info"><b>TurboTap</b><small>Speed tapping</small></span><span class="arrow">↗</span></button>
+      <button class="game-card" data-game="workbench"><span class="game-art bench-art"><img src="/icons/workbench.svg" alt="" /></span><span class="game-info"><b>Верстак</b><small>Minegoing upgrades</small></span><span class="arrow">↗</span></button>
+      <button class="game-card" data-game="achievements"><span class="game-art trophy-art"><img src="/icons/achievements.svg" alt="" /></span><span class="game-info"><b>Достижения</b><small>Твой прогресс</small></span><span class="arrow">↗</span></button>
+    </section>
+    <footer>ТВОЙ МИР · ТВОИ ПРАВИЛА <span>✦</span></footer>
+  </main>
+  <section id="gameScreen" class="game-screen hidden">
+    <div class="game-nav"><button class="back-btn" id="backBtn">←</button><div><span class="eyebrow" id="gameTag">GAME MODULE</span><h2 id="gameTitle">Game</h2></div><div class="mini-balance"><span id="miniBalance">10.00</span> ₽</div></div>
+    <div id="gameContent"></div>
+  </section>
+  <div class="toast" id="toast"></div>
+</div>
+<script src="app.js"></script>
+</body></html>
